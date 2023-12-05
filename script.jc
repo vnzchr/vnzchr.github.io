@@ -1,8 +1,8 @@
 const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
-const yesBtn = document.querySelector(".yesBtn");
-const noBtn =document.querySelector(".noBtn");
+const yesBtn = document.querySelector(".yes-Btn");
+const noBtn =document.querySelector(".no-Btn");
 
 yesBtn.addEventListener("click", () => {
   question.innerhtml = "aaaa, i like u too as a friend lol";
