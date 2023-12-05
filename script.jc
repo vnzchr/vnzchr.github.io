@@ -1,11 +1,11 @@
 const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
-const yesBtn = document.querySelector(".yes-btn");
-const noBtn = document.querySelector(".no-btn");
+const yesBtn = document.querySelector(".yesBtn");
+const noBtn =document.querySelector(".noBtn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Aaaaa, i like you too as a friend lol";
+  question.innerhtml = "aaaa, i like u too as a friend lol";
   gif.src =
     "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
 });
@@ -13,7 +13,7 @@ yesBtn.addEventListener("click", () => {
 noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
-  const maxY = window.innerHeight - noBtnRect.height;
+  const maxX = window.innerHeight - noBtnRect.height;
 
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
