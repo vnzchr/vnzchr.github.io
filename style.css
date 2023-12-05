@@ -34,6 +34,7 @@ h2{
 	font-family: Futura Bold, sans-serif;
 }
 button {
+  position: absolute;
   align-self: center;
   background-color: #fff;
   background-image: none;
