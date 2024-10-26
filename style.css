@@ -14,6 +14,12 @@ body {
   box-sizing: border-box;
 }
 
+.gif {
+  max-width: 100%; /* Makes the GIF responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 20px; /* Adds space below the GIF */
+}
+
 /* Header Style */
 h1 {
   font-size: 2rem;
