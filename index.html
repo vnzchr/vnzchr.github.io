@@ -1,57 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compliment Generator</title>
-  <style>
-    body {
-      background-color: #ffebf0;
-      font-family: 'Arial Rounded MT Bold';
-      text-align: center;
-      padding: 50px;
-    }
-     .button {
-  background-color: #ff85a2;
-  color: white;
-  border: 4px solid black; /* Medium-thick black border */
-  padding: 15px 30px;
-  font-size: 1.5rem;
-  border-radius: 25px;
-  cursor: pointer;
-
-  /* Drop-down shadow matching the button's shape */
-  box-shadow: 0 8px black;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-}
-    .compliment {
-      margin-top: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Get a compliment, because you deserve it :)</h1>
-  <button class="button" onclick="generateCompliment()">CLICK ME</button>
+  <h1>Get a compliment because you deserves it</h1>
+  <button class="button">CLICK ME</button>
   <p class="compliment"></p>
 
-  <script>
-    const compliments = [
-      "You’re a shining star!",
-      "Your smile lights up the room!",
-      "You make the world a better place",
-      "There’s magic in everything you do!",
-      "You deserve all the hugs today!"
-      "Keep up :)"
-    ]
+  <footer>Made with ❤️ to brighten your day!</footer>
 
-    function generateCompliment() {
-      const randomIndex = Math.floor(Math.random() * compliments.length);
-      document.querySelector('.compliment').textContent = compliments[randomIndex];
-    }
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
