@@ -2,11 +2,9 @@ const compliments = [
   "You’re a shining star!",
   "Your smile lights up the room!",
   "You make the world a better place.",
-  "There’s magic in everything you do!",
   "You deserve all the hugs today!",
   "You're wonderfully unique!",
   "You're a joy to be around!",
-  "You brighten even the gloomiest days!"
 ];
 
 // Function to create a typewriter effect
