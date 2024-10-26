@@ -1,23 +1,27 @@
-const wrapper = document.querySelector(".wrapper");
-const question = document.querySelector(".question");
-const gif = document.querySelector(".gif");
-const yesBtn = document.querySelector(".yes-btn");
-const noBtn =document.querySelector(".no-btn");
+// Array of compliments to display
+const compliments = [
+  "You’re a shining star!",
+  "Your smile lights up the room!",
+  "You make the world a better place.",
+  "There’s magic in everything you do!",
+  "You deserve all the hugs today!",
+  "You're wonderfully unique!",
+  "You're a joy to be around!",
+  "You brighten even the gloomiest days!"
+];
 
-yesBtn.addEventListener("click", () => {
-  question.innerHTML = "aaaa, i like u too as a friend lol";
-  gif.src =
-    "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
-});
+// List of background colors to rotate through
+const bgColors = ["#ffebf0", "#e0f7fa", "#fff4e6", "#e8eaf6", "#e1bee7"];
 
-noBtn.addEventListener("mouseover", () => {
-  const noBtnRect = noBtn.getBoundingClientRect();
-  const maxX = window.innerWidth - noBtnRect.width;
-  const maxY = window.innerHeight - noBtnRect.height;
+// Function to generate a random compliment
+function generateCompliment() {
+  const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+  document.querySelector('.compliment').textContent = randomCompliment;
 
-  const randomX = Math.floor(Math.random() * maxX);
-  const randomY = Math.floor(Math.random() * maxY);
+  // Randomly change background color
+  const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
+  document.body.style.backgroundColor = randomColor;
+}
 
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
-});
+// Event listener for the button click
+document.querySelector('.button').addEventListener('click', generateCompliment);
