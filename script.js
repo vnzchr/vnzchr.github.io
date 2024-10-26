@@ -31,7 +31,7 @@ function generateCompliment() {
   const compliment = compliments[randomIndex];
   const complimentElement = document.querySelector('.compliment');
 
-  // Trigger typewriter animation with the selected compliment
+  // Trigger typewriter animation
   typeWriter(compliment, complimentElement);
 }
 
