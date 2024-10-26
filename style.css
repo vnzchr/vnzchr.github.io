@@ -1,82 +1,57 @@
-*
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: offwhite;
-	font-family: Futura, sans-serif;
+  background-color: #ffebf0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
 }
 
-.gif{
-	height: 90%;
-	width: 90%;
+/* Header Style */
+h1 {
+  font-size: 2rem;
+  color: #ff6f91;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-h2{
-	text-align: center;
-	font-size: 1.5cm;
-	color: #ea9999;
-	margin: 15px 0;
-}
-.btn-group {
-	width: 100%;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
-	font-family: Futura Bold, sans-serif;
-}
-button {
-  position: absolute;
-  align-self: center;
-  background-color: #fff;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 100px 255px 15px;
-  box-sizing: border-box;
+/* Compliment Button */
+.button {
+  background-color: #ff85a2;
   color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Futura Bold, sans-serif;
+  border: none;
+  padding: 15px 30px;
   font-size: 1.5rem;
-  line-height: 28px;
-  outline: none;
-  padding: .80rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s;
 }
-button:nth-child(1) {
-	margin-left: -100px;
-	background: #ea9999;
+
+/* Button Hover Effect */
+.button:hover {
+  background-color: #ff7290;
+  transform: scale(1.05);
 }
-button:nth-child(2) {
-	margin-right: -100px;
-	background: offwhite;
-	color: #ea9999;
+
+/* Compliment Text */
+.compliment {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #4a4a4a;
+  min-height: 50px;
+  transition: opacity 0.3s ease;
 }
-button:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-}
-button:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+
+/* Footer Style */
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.9rem;
+  color: #999;
 }
