@@ -7,7 +7,7 @@ const compliments = [
   "You're wonderfully unique!",
   "You're a joy to be around!",
   "You brighten even the gloomiest days!"
-]
+];
 
 // Function to create a typewriter effect
 function typeWriter(text, element, speed = 50) {
@@ -31,7 +31,7 @@ function generateCompliment() {
   const compliment = compliments[randomIndex];
   const complimentElement = document.querySelector('.compliment');
 
-  // Trigger typewriter animation
+  // Trigger typewriter animation with the selected compliment
   typeWriter(compliment, complimentElement);
 }
 
