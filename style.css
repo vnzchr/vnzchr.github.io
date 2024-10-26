@@ -20,29 +20,32 @@ h1 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Compliment Button with Black Border and Shadow */
 .button {
   background-color: #ff85a2;
   color: white;
-  border: none;
+  border: 4px solid black; /* Medium-thick black border */
   padding: 15px 30px;
   font-size: 1.5rem;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Drop shadow */
-  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s;
+
+  /* Drop-down shadow matching the button's shape */
+  box-shadow: 0 8px black;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 /* Button Hover Effect */
 .button:hover {
   background-color: #ff7290;
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Elevated shadow */
+  transform: translateY(-2px); /* Slight lift */
+  box-shadow: 0 10px black; /* Shadow deepens */
 }
 
 /* Button Active (Click) State */
 .button:active {
-  transform: scale(0.98);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  transform: translateY(2px); /* Button pressed down */
+  box-shadow: 0 4px black; /* Shadow shrinks */
 }
 
 /* Compliment Text */
