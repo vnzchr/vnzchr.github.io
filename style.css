@@ -48,14 +48,26 @@ h1 {
   box-shadow: 0 4px black; /* Shadow shrinks */
 }
 
-/* Compliment Text */
+/* Compliment Text with Blinking Cursor */
 .compliment {
   margin-top: 20px;
   font-size: 1.8rem;
   color: #4a4a4a;
   min-height: 50px;
-  transition: opacity 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap; /* Prevents line breaks during typing */
+  overflow: hidden; /* Hides the text before typing */
+  border-right: 3px solid black; /* Typewriter cursor */
+  animation: blink-cursor 0.7s steps(2) infinite;
 }
+
+/* Blinking Cursor Animation */
+@keyframes blink-cursor {
+  0% { border-right-color: black; }
+  50% { border-right-color: transparent; }
+  100% { border-right-color: black; }
+}
+
 
 /* Footer Style */
 footer {
