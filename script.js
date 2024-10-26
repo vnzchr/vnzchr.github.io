@@ -1,4 +1,3 @@
-// Array of compliments to display
 const compliments = [
   "You’re a shining star!",
   "Your smile lights up the room!",
@@ -10,18 +9,31 @@ const compliments = [
   "You brighten even the gloomiest days!"
 ];
 
-// List of background colors to rotate through
-const bgColors = ["#ffebf0", "#e0f7fa", "#fff4e6", "#e8eaf6", "#e1bee7"];
+// Function to create a typewriter effect
+function typeWriter(text, element, speed = 50) {
+  let i = 0;
+  element.textContent = ""; // Clear previous text
 
-// Function to generate a random compliment
-function generateCompliment() {
-  const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
-  document.querySelector('.compliment').textContent = randomCompliment;
+  function type() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
 
-  // Randomly change background color
-  const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
-  document.body.style.backgroundColor = randomColor;
+  type();
 }
 
-// Event listener for the button click
+// Main function to generate a compliment with the typewriter effect
+function generateCompliment() {
+  const randomIndex = Math.floor(Math.random() * compliments.length);
+  const compliment = compliments[randomIndex];
+  const complimentElement = document.querySelector('.compliment');
+
+  // Trigger typewriter animation
+  typeWriter(compliment, complimentElement);
+}
+
+// Add event listener to the button
 document.querySelector('.button').addEventListener('click', generateCompliment);
