@@ -7,7 +7,7 @@ const compliments = [
   "You're wonderfully unique!",
   "You're a joy to be around!",
   "You brighten even the gloomiest days!"
-];
+]
 
 // Function to create a typewriter effect
 function typeWriter(text, element, speed = 50) {
