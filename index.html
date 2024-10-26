@@ -1,19 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>hi there <3</title>
-	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="wrapper">
-			<h2 class="question">do u like me?</h2>
-			<img class="gif" alt="gif"
-src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gifyou.webp">
-		<div class="btn-group"> <button class="yes-btn">yea</button> <button class="no-btn">nah</button>
-		</div>
-		</div>
-		<script src="script.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliment Generator</title>
+  <style>
+    body {
+      background-color: #ffebf0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .button {
+      background-color: #ff85a2;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .compliment {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Get a Compliment!</h1>
+  <button class="button" onclick="generateCompliment()">Click me</button>
+  <p class="compliment"></p>
+
+  <script>
+    const compliments = [
+      "You’re a shining star!",
+      "Your smile lights up the room!",
+      "You make the world a better place.",
+      "There’s magic in everything you do!",
+      "You deserve all the hugs today!"
+    ];
+
+    function generateCompliment() {
+      const randomIndex = Math.floor(Math.random() * compliments.length);
+      document.querySelector('.compliment').textContent = compliments[randomIndex];
+    }
+  </script>
+</body>
 </html>
