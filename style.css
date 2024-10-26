@@ -57,7 +57,7 @@ h1 {
   max-width: 90%; /* Limit the width to 90% of the container */
   white-space: nowrap; /* Prevents line breaks during typing */
   overflow: hidden; /* Hides the text before typing */
-  border-right: 3px solid black; /* Typewriter cursor */
+  border-right: 2px solid black; /* Reduced cursor width for consistency */
   animation: blink-cursor 0.7s steps(2) infinite;
 }
 
@@ -92,5 +92,6 @@ footer {
     margin-top: 15px;
     max-width: 100%; /* Full width on small screens */
     white-space: normal; /* Allow wrapping on mobile */
+    border-right: 2px solid black; /* Keep the cursor size consistent */
   }
 }
