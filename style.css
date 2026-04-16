@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   background-color: #f3dcaf;
-  font-family: 'Pix32';
+  font-family: 'Pix32', 'bitmap';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@ h1 {
 /* Compliment Button with Border and Shadow */
 .button {
   background-color: #fbc107;
-   font-family: 'Pix32';
+  font-family: 'Pix32', 'bitmap';
   color: white;
   border: 4px solid black;
   padding: 15px 30px;
@@ -44,7 +44,7 @@ h1 {
 
 /* Button Hover Effect */
 .button:hover {
-  background-color: #ff7290;
+  background-color: #ff8800;
   transform: translateY(-2px);
   box-shadow: 0 10px black;
 }
